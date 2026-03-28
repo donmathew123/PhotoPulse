@@ -20,7 +20,7 @@ Download the apk using the link:https://drive.google.com/file/d/178YzDyOYuHsvH9P
 ```dart
 class ApiService {
   // Pexels API Key 
-  static const String apiKey = 'YOUR_PEXELS_API_KEY_HERE';
+  static const String apiKey = 'paste the api here';
   static const String baseUrl = 'https://api.pexels.com/v1';
   // ...
 }

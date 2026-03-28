@@ -64,7 +64,7 @@ class ImageDetailScreen extends StatelessWidget {
             ),
           ),
           
-          // Gradient Overlay to ensure text visibility
+          // Gradient Overlay 
           Positioned(
             bottom: 0,
             left: 0,

@@ -1,0 +1,10 @@
+# Tell GitHub Linguist to ignore platform-specific code folders for language statistics
+# This ensures your repository is correctly identified as a Dart project.
+android/* linguist-vendored
+ios/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+windows/* linguist-vendored
+web/* linguist-vendored
+build/* linguist-vendored
+.dart_tool/* linguist-vendored

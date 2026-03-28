@@ -57,7 +57,7 @@ class DatabaseHelper {
 
   Future<List<ImageModel>> getFavourites() async {
     final db = await instance.database;
-    final orderBy = 'id DESC'; // Assuming we want newly favourited items at the bottom but actually we don't have timestamp. Let's just return all.
+    final orderBy = 'id DESC'; 
     final maps = await db.query('favourites');
 
     if (maps.isNotEmpty) {

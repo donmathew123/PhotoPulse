@@ -2,7 +2,7 @@
 
 
 product demo:
-https://github.com/user-attachments/assets/c6328b44-b58b-4946-9974-f1cfc4feac11
+https://github.com/user-attachments/assets/b0a79137-560b-4fa0-a263-8cf964ff7c15
 
 
 ## Pexels API Key Setup

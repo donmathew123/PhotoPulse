@@ -52,13 +52,16 @@ We use sqflite rather than shared_preferences.
 Why Sqflite? Storing a dynamic list of objects (favourited images) is safer and more queryable natively in SQLite compared to manipulating sprawling JSON strings in SharedPreferences.
 Lifecycle: The database initializes and creates an images table when the app first launches. AppProvider calls _loadFavourites() immediately upon instantiation to ensure saved favourites persist across app restarts.
 Operations: Features asynchronous insert (adding a favourite), delete (removing a favourite by ID), and query (fetching all favourites).
+
 4. UI/UX and Theming
 Material 3 Guidelines: The app fully embraces useMaterial3: true. Dynamic ColorScheme.fromSeed is utilized to auto-generate complementary palettes based on standard seed colors.
 Adaptive Theming: Native support for switching seamlessly between light and dark modes based on ThemeMode.system.
 Optimized Scrolling & Caching: Leveraging cached_network_image ensures that image fetching doesn't redownload previously viewed assets. This preserves user bandwidth and leads to silky-smooth scroll performance within dynamic grid views.
 Navigation: Uses Flutter's newer Material 3 NavigationBar via a standard StatefulWidget (MainTabScreen) to flip between Search and Favourite tabs without pushing/popping routes.
+
 5. Security & Build Considerations
-API Key Management: Currently, the Pexels API key is kept within the service layer. For true production environments, it is recommended to obfuscate this via backend proxy or use --dart-define for compile-time constants.
+API Key Management: Currently, the Pexels API key is kept within the service layer. For true production environments, it is recommended to obfuscate this via backend proxy or use --dart-define for compile-
+time constants.
 Launcher Icons: Uses flutter_launcher_icons to generate multi-platform app icons directly from lib/assests/icon.png._currentImages` list to empty and updating the loading state.
 
 #### Local Persistence (`DatabaseHelper`)

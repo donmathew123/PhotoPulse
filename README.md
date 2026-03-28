@@ -8,10 +8,18 @@ Download the apk using the link:https://drive.google.com/file/d/178YzDyOYuHsvH9P
 
 
 ## Pexels API Key Setup
+1. Get a free API key from [Pexels API](https://www.pexels.com/api/).
+2. Open `lib/services/api_service.dart`.
+3. Locate the `apiKey` variable and replace its value with your newly generated API key:
 
-Add your Pexels API Key in `lib/services/api_service.dart`:
 ```dart
-static const String apiKey = 'upload the api here ';
+class ApiService {
+  // Pexels API Key 
+  static const String apiKey = 'YOUR_PEXELS_API_KEY_HERE';
+  static const String baseUrl = 'https://api.pexels.com/v1';
+  // ...
+}
+```
 
 
 

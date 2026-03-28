@@ -22,7 +22,7 @@ class ApiService {
 ```
 
 
-Tech note
+##Tech note
 
 1. Executive Summary
 PhotoPulse is a Flutter application designed for searching, viewing, and locally saving high-resolution images via the Pexels API. It focuses on performance, state determinism, and adhering to modern Material 3 design paradigms. The primary goal is to provide a seamless caching mechanism and robust offline persistence for favourite images.
